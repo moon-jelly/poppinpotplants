@@ -15,7 +15,7 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: sqlite3
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: ideas_app_production
   username: ideas_app
   password: <%= ENV['IDEAS_APP_DATABASE_PASSWORD'] %>
+
