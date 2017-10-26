@@ -143,3 +143,10 @@ Use Ctrl-C to stop
 
 Which means it started successfully! Now you can visit http://localhost:3000
 and see your very own app running
+
+#### Running tests
+
+To run the suite of automated tests, run:
+
+    $ bundle exec rspec
+
